@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ecografía </title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="main.css">
+</head>
+
+<body>
+
+    <!-- Top Navbar -->
+    <header class="top-bar d-flex align-items-center justify-content-between px-4 bg-primary text-white">
+        <div class="logo d-flex align-items-center">
+            <img src="./img/logo.png" alt="Logo de la empresa" class="logo-img mr-2" style="height: 28px;">
+            <h1 class="m-3">Ecografía Digital</h1>
+        </div>
+        <nav>
+            <ul class="nav">
+               
+                <li class="nav-item">
+                    <a class="nav-link text-white" href="#logout">Cerrar Sesión</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <!-- /Top Navbar -->
+
+    <!-- Main Content -->
+    <main class="container mt-5 pt-5">
+        <!-- Hero Section -->
+      
+
+        <!-- Registro de Pacientes -->
+        <section id="registro" class="my-5">
+            <h2 class="text-center">Registro de Ecografia</h2>
+            <form id="registro-form" class="mx-auto" style="max-width: 600px;">
+                <div class="mb-3">
+                    <label for="Tipo de Ecografia" class="form-label">Tipo de Ecografia</label>
+                    <select class="form-control" id="eco" name="eco" required>
+                        <option value="abdominal">Abdominal</option>
+                        <option value="renal y vesical">Renal y Vesical</option>
+                        <option value="prostata y vegija">Prostata y Vegija</option>
+                        <option value="tiroides">Tiroides</option>
+                        <option value="mamaria">Mamaria</option>
+                        <option value="transvaginal">Transvaginal</option>
+                        <option value="partes blandas">Partes Blandas</option>
+                    </select>
+                </div>
+                <div class="mb-3">
+                    <label for="apellidos" class="form-label">Descripcion</label>
+                    <input type="text" class="form-control" id="descripcion" name="descripcion" >
+                </div>
+                <div class="mb-3">
+                    <label for="telefono" class="form-label">Precio</label>
+                    <input type="tel" class="form-control" id="precio" name="precio">
+                </div>
+               
+                <div class="text-center">
+                    <button type="submit" class="btn btn-primary">Registrar</button>
+                    <button type="button" class="btn btn-secondary" onclick="window.location.href='lista.html'">Lista de Pacientes</button>
+                </div>
+            </form>
+        </section>
+    </main>
+    <!-- /Main Content -->
+
+    <!-- Footer -->
+    <footer class="bg-light text-center py-3">
+        <p>&copy; 2025 Ecografía Digital. Todos los derechos reservados.</p>
+    </footer>
+    <!-- /Footer -->
+
+    <!-- Vendor JS Files -->
+    <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

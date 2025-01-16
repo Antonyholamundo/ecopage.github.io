@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ecografía Digital</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="main.css">  <!-- Enlace a tu archivo CSS -->
+</head>
+<body>
+    <header class="top-bar d-flex align-items-center justify-content-between px-4 bg-primary text-white">
+        <div class="logo d-flex align-items-center">
+            <img src="./img/logo.png" alt="Logo de la empresa" class="logo-img mr-2" style="height: 28px;">
+            <h1 class="m-3 titulo-ecografia">Ecografía Digital</h1>
+        </div>
+        <nav>
+            <ul class="nav">
+               
+                <li class="nav-item">
+                    <a class="nav-link text-white" href="#logout">Cerrar Sesión</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <div class="container-fluid">
+        <div class="row">
+            <nav class="col-md-3 col-lg-2 d-md-block  sidebar">
+                <div class="sidebar-sticky">
+                    <ul class="nav flex-column">
+                        <li class="nav-item">
+                            <a class="nav-link active" href="index.html">
+                                <span data-feather="home"></span>
+                                Inicio <span class="sr-only">(current)</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="pacientes.html">
+                                <span data-feather="file"></span>
+                                Ingresar Paciente
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="lista.html">
+                                <span data-feather="users"></span>
+                                Lista de Pacientes
+                            </a>
+                        </li>
+                       </ul>
+                </div>
+            </nav>
+        </div>
+    </div>
+
+
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+
+    <!--  Feather Icons (opcional para los iconos del menú) -->
+    <script src="https://unpkg.com/feather-icons/dist/feather.min.js"></script>
+    <script>
+      feather.replace()
+    </script>
+
+</body>
+</html>

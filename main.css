@@ -1,0 +1,204 @@
+/* Variables globales */
+:root {
+    --primary-blue: #00A7D9;
+    --secondary-blue: #0095c2;
+    --white: #ffffff;
+    --light-gray: #0095c2;
+    --dark-gray: #343a40;
+    --sidebar-width: 250px;
+}
+
+/* Estilos generales */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    min-height: 8%;
+}
+
+/* Barra superior */
+.titulo-ecografia {
+    font-size: 2rem; /* O el tamaño que desees */
+  }
+.top-bar {
+    background-color: var(--primary-blue);
+    color: var(--white);
+    height: 80px;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+}
+
+.logo-img {
+    height: 40px;
+    margin-right: 10px;
+}
+
+/* Barra lateral */
+.sidebar {
+    background-color: var(--primary-blue);
+    width: var(--sidebar-width);
+    height: 100vh;
+    position: fixed;
+    left: 0;
+    top: 60px;
+    color: #0095c2;
+    padding-top: 20px;
+}
+
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.sidebar li {
+    padding: 15px 20px;
+    cursor: pointer;
+   
+}
+
+.sidebar li:hover {
+    background-color: var(--secondary-blue);
+}
+
+.sidebar a {
+    color: var(--white);
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.sidebar i {
+    font-size: 1.2rem;
+}
+
+/* Contenido principal */
+.main-content {
+    margin-left: var(--sidebar-width);
+    margin-top: 60px;
+    padding: 20px;
+    background-color: var(--white);
+    min-height: calc(100vh - 60px);
+}
+
+/* Formularios */
+.form-container {
+    background-color: var(--white);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    max-width: 800px;
+    margin: 20px auto;
+}
+
+.form-control {
+    margin-bottom: 1rem;
+}
+
+/* Botones */
+.btn-primary {
+    background-color: var(--primary-blue);
+    border-color: var(--primary-blue);
+}
+
+.btn-primary:hover {
+    background-color: var(--secondary-blue);
+    border-color: var(--secondary-blue);
+}
+
+/* Tabla de pacientes */
+.table-container {
+    background-color: var(--white);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+}
+
+.table {
+    width: 100%;
+    margin-bottom: 1rem;
+}
+
+.table th {
+    background-color: var(--light-gray);
+    color: var(--dark-gray);
+    font-weight: 500;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .sidebar {
+        width: 0;
+        overflow: hidden;
+        transition: width 0.3s ease;
+    }
+    
+    .sidebar.active {
+        width: var(--sidebar-width);
+    }
+    
+    .main-content {
+        margin-left: 0;
+    }
+    
+    .top-bar {
+        padding: 0 10px;
+    }
+    
+    .form-container {
+        margin: 10px;
+    }
+}
+
+/* Utilidades */
+.text-white {
+    color: var(--white) !important;
+}
+
+.bg-primary {
+    background-color: var(--primary-blue) !important;
+}
+
+/* Cerrar Sesión */
+.logout-btn {
+    color: var(--white);
+    text-decoration: none;
+    padding: 8px 15px;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+}
+
+.logout-btn:hover {
+    background-color: var(--secondary-blue);
+    color: var(--white);
+}
+
+/* Iconos */
+.nav-icon {
+    width: 100px;
+    height: 100px;
+    margin-right: 1px;
+
+}
+
+/* Footer */
+footer {
+    background-color: var(--light-gray);
+    padding: 15px;
+    text-align: center;
+    margin-top: auto;
+}
